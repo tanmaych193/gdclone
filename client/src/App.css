@@ -1,0 +1,161 @@
+.main{
+    width: 17%;
+    background-color: #c2e7ff1e;
+    height: 99vh;
+}
+.logo{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin-left: 6%;
+    margin-top: 0.5%;
+    align-items: center;
+}
+.logo h2{
+    font-size: 33px;
+}
+.main button{
+    padding: 20px 30px;
+    font-size: 20px;
+    margin: 10px 20px;
+    cursor: pointer;
+}
+.inner{
+    display: flex;
+    margin: 7px 20px;
+    padding: 5px 15px;
+    align-items: center;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.inner img{
+    height: 19px;
+    width: 19px;
+    margin-right: 10px;
+}
+
+.inner1{
+     padding: 5px 15px;
+    display: flex;
+    margin: 25px 20px 10px 20px;
+    align-items: center;
+    transition: 0.3s ease;
+}
+.inner1 img{
+    height: 19px;
+    width: 19px;
+    margin-right: 10px;
+}
+.inner:hover{
+    background-color: #C2E7FF;
+    border-radius: 22px;
+}
+.inner1:hover{
+    background-color: #C2E7FF;
+    border-radius: 22px;
+}
+.outer{
+    display: flex;
+}
+.left-main{
+    position: relative;
+    display: flex;
+    width: 83%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c2e7ff1e;
+    height: 2%;
+    padding: 0.7% 0;
+}
+.inp{
+    width: 50%;
+}
+.left-inner{
+    display: flex;
+    justify-content: space-around;
+    width: 18%;
+    margin-right: 10px;
+}
+.left-inner img{
+    padding: 7px;
+    cursor: pointer;
+}
+.left-inner img:hover{
+    background-color: rgba(128, 128, 128, 0.349);
+    border-radius: 22px;
+}
+.header{
+    position: absolute;
+    top: 60px;
+    padding: 15px 20px;
+    left: 17%;
+    border-radius: 12px;
+}
+.header h1{
+    font-size: 26px;
+}
+/* Modal Styles */
+.file-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.file-modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  text-align: center;
+}
+
+.file-modal button {
+  margin: 10px;
+}
+.mainLink {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap onto the next line */
+  gap: 10px; /* Adds spacing between links */
+  margin-top: 20px;
+}
+
+.mainLinkCard {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.mainLinkCard ul {
+  display: flex;
+  flex-wrap: wrap; /* Allow the links to wrap to the next line */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mainLinkCard li {
+  flex: 1 1 22%; /* Each item takes up 22% of the container's width */
+  margin: 10px;
+}
+
+.mainLinkCard a {
+  color: #1a73e8;
+  text-decoration: underline;
+  font-weight: bold;
+  display: block;
+  width: 22%;
+}
+.mainLink img{
+    height: 100px;
+    width: 100px;
+}
