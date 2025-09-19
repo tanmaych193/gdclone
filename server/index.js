@@ -24,6 +24,7 @@ const pool = new Pool({
   database: 'drive', // Name of the database
   password: 'npg_BZ0g9lcpiToj', // Database user password
   port: 5432, // Default PostgreSQL port
+      sslmode: 'require' // Require SSL connection
 });
 
 pool.connect()
@@ -166,6 +167,7 @@ app.post('/api/upload-multiple', uploadMultiple.array('files', 10), async (req, 
 app.listen(port, () => {
   console.log(`Server running on https://gdclone-c7gy.onrender.com/`);
 });
+
 
 
 
