@@ -163,8 +163,8 @@ app.post('/api/upload-multiple', uploadMultiple.array('files', 10), async (req, 
 
 // Start the server
 app.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}`);
-
+  console.log(`Server running on https://gdclone-c7gy.onrender.com/`);
 });
+
 
 
