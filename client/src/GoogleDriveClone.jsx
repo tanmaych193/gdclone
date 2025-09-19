@@ -13,7 +13,7 @@ function GoogleDriveClone(props) {
   const [error, setError] = useState("");
 
   // Backend API base URL
-  const API_BASE_URL = "http://localhost:5000";
+  const API_BASE_URL = "https://gdclone-c7gy.onrender.com/";
 
   // Fetch files from the backend
   const fetchFiles = useCallback(async () => {
