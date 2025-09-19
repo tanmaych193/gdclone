@@ -83,6 +83,18 @@ app.get('/', (req, res) => {
   res.send('Server is up!');
 });
 
+// app.get('/api/drive', async (req, res) => {
+//   console.log('GET /api/drive called');
+//   try {
+//     const result = await pool.query('SELECT * FROM drive ORDER BY id DESC');
+//     console.log('DB result:', result.rows);
+//     res.json(result.rows);
+//   } catch (err) {
+//     console.error('Error in /api/drive:', err);
+//     res.status(500).send('Database error');
+//   }
+// });
+
 app.get('/api/drive', async (req, res) => {
   console.log('GET /api/drive called');
   try {
@@ -90,10 +102,15 @@ app.get('/api/drive', async (req, res) => {
     console.log('DB result:', result.rows);
     res.json(result.rows);
   } catch (err) {
-    console.error('Error in /api/drive:', err);
-    res.status(500).send('Database error');
+    // Enhanced error logging
+    console.error('Error in /api/drive:', err.message);
+    console.error('Stack trace:', err.stack);
+
+    // Send a detailed error message in the response
+    res.status(500).send(`Database error: ${err.message}`);
   }
 });
+
 
 
 // Single file upload route
@@ -167,6 +184,7 @@ app.post('/api/upload-multiple', uploadMultiple.array('files', 10), async (req, 
 app.listen(port, () => {
   console.log(`Server running on https://gdclone-c7gy.onrender.com/`);
 });
+
 
 
 
