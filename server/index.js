@@ -19,11 +19,11 @@ app.options(/^.*$/, cors(corsOptions));
 app.use(express.json());
 
 const pool = new Pool({
-  user: 'postgres',
-  host: 'localhost',
-  database: 'drive',
-  password: '1234',
-  port: 5432,
+  user: 'neondb', // PostgreSQL user
+  host: 'ep-bold-smoke-ad0pqel1-pooler.c-2.us-east-1.aws.neon.tech', // Database host
+  database: 'drive', // Name of the database
+  password: 'npg_BZ0g9lcpiToj', // Database user password
+  port: 5432, // Default PostgreSQL port
 });
 
 pool.connect()
@@ -166,4 +166,5 @@ app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 
 });
+
 
