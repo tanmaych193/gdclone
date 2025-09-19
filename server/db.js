@@ -6,6 +6,8 @@ const pool = new Pool({
   database: 'drive', // Name of the database
   password: 'npg_BZ0g9lcpiToj', // Database user password
   port: 5432, // Default PostgreSQL port
+    sslmode: 'require' // Require SSL connection
 });
 
 module.exports = pool;
+
