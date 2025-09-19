@@ -9,7 +9,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 const corsOptions = {
-  origin: 'https://gdclone-omega.vercel.app/',
+  origin: 'https://gdclone-omega.vercel.app',
   methods: ['GET', 'POST', 'PUT', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
 };
@@ -166,3 +166,4 @@ app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 
 });
+
