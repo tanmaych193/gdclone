@@ -19,9 +19,9 @@ app.options(/^.*$/, cors(corsOptions));
 app.use(express.json());
 
 const pool = new Pool({
-  user: 'neondb', // PostgreSQL user
+  user: 'neondb_owner', // PostgreSQL user
   host: 'ep-bold-smoke-ad0pqel1-pooler.c-2.us-east-1.aws.neon.tech', // Database host
-  database: 'drive', // Name of the database
+  database: 'neondb', // Name of the database
   password: 'npg_BZ0g9lcpiToj', // Database user password
   port: 5432, // Default PostgreSQL port
     ssl: {
@@ -186,6 +186,7 @@ app.post('/api/upload-multiple', uploadMultiple.array('files', 10), async (req, 
 app.listen(port, () => {
   console.log(`Server running on https://gdclone-c7gy.onrender.com/`);
 });
+
 
 
 
